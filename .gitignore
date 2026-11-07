@@ -1,0 +1,51 @@
+# Python bytecode and compiled extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build and packaging output
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+
+# Test, coverage, and analysis caches
+.pytest_cache/
+.tox/
+.nox/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local virtual environments and environment variables
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Editor settings and temporary files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+tempCodeRunnerFile.py
+.ipynb_checkpoints/
+
+# Operating system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,167 @@
+{
+  "environment": {
+    "python": "3.13.18",
+    "numpy": "2.5.3",
+    "platform": "Linux-6.18.44-fc-v300-x86_64-with-glibc2.39"
+  },
+  "settings": {
+    "quick": false,
+    "repeat": 3,
+    "seed": 42
+  },
+  "loop_vs_vectorised": [
+    {
+      "task": "best split (6 features)",
+      "size": 500,
+      "loop_median_s": 0.0557885590000069,
+      "vectorised_median_s": 0.0005048589999887554,
+      "speedup": 110.5032474438397,
+      "loop_times": [
+        0.05732593699997324,
+        0.0557885590000069,
+        0.05321602399999392
+      ],
+      "vectorised_times": [
+        0.0005048589999887554,
+        0.0005330120000053284,
+        0.0004982420000487764
+      ]
+    },
+    {
+      "task": "best split (6 features)",
+      "size": 1000,
+      "loop_median_s": 0.14616588199999114,
+      "vectorised_median_s": 0.0008608439999875372,
+      "speedup": 169.79369316868937,
+      "loop_times": [
+        0.14616588199999114,
+        0.14570564699999977,
+        0.14688818500002299
+      ],
+      "vectorised_times": [
+        0.0009122429999592896,
+        0.0008389019999981429,
+        0.0008608439999875372
+      ]
+    },
+    {
+      "task": "best split (6 features)",
+      "size": 2000,
+      "loop_median_s": 0.4303619439999693,
+      "vectorised_median_s": 0.0020052720000194313,
+      "speedup": 214.61524620889287,
+      "loop_times": [
+        0.45318435500001897,
+        0.41523851599998807,
+        0.4303619439999693
+      ],
+      "vectorised_times": [
+        0.0020052720000194313,
+        0.0020100530000490835,
+        0.0019533130000013443
+      ]
+    },
+    {
+      "task": "predict (depth<=8 tree)",
+      "size": 50000,
+      "loop_median_s": 0.2246907610000335,
+      "vectorised_median_s": 0.0059882770000285745,
+      "speedup": 37.52177145428666,
+      "loop_times": [
+        0.2246907610000335,
+        0.23147078199997395,
+        0.2179161089999866
+      ],
+      "vectorised_times": [
+        0.006166973000006237,
+        0.005552202999979272,
+        0.0059882770000285745
+      ]
+    },
+    {
+      "task": "running mean/var (chunks of 100)",
+      "size": 200000,
+      "loop_median_s": 0.5291153889999691,
+      "vectorised_median_s": 0.06977633300004982,
+      "speedup": 7.583020864676156,
+      "loop_times": [
+        0.5110621580000156,
+        0.5291153889999691,
+        0.5619125160000067
+      ],
+      "vectorised_times": [
+        0.07268495599998914,
+        0.06977633300004982,
+        0.06736432499997136
+      ]
+    }
+  ],
+  "buffer_sizes": {
+    "n_samples": 12000,
+    "chunk_size": 100,
+    "max_depth": 8,
+    "drift_at": 0.5,
+    "rows": [
+      {
+        "accuracy": 0.8953781512605042,
+        "accuracy_after_drift": 0.8903333333333333,
+        "scored_fraction": 0.9916666666666667,
+        "n_retrains": 120,
+        "retrain_time_total_s": 0.25963164099982805,
+        "retrain_time_mean_s": 0.0021635970083319005,
+        "memory_bytes": 4643,
+        "buffer_size": 100
+      },
+      {
+        "accuracy": 0.8937606837606837,
+        "accuracy_after_drift": 0.8766666666666667,
+        "scored_fraction": 0.975,
+        "n_retrains": 40,
+        "retrain_time_total_s": 0.2251495190000128,
+        "retrain_time_mean_s": 0.00562873797500032,
+        "memory_bytes": 7263,
+        "buffer_size": 250
+      },
+      {
+        "accuracy": 0.890695652173913,
+        "accuracy_after_drift": 0.8661666666666666,
+        "scored_fraction": 0.9583333333333334,
+        "n_retrains": 24,
+        "retrain_time_total_s": 0.21106524699996498,
+        "retrain_time_mean_s": 0.008794385291665208,
+        "memory_bytes": 9711,
+        "buffer_size": 500
+      },
+      {
+        "accuracy": 0.8645454545454545,
+        "accuracy_after_drift": 0.8225,
+        "scored_fraction": 0.9166666666666666,
+        "n_retrains": 12,
+        "retrain_time_total_s": 0.1633304000000635,
+        "retrain_time_mean_s": 0.013610866666671958,
+        "memory_bytes": 11439,
+        "buffer_size": 1000
+      },
+      {
+        "accuracy": 0.8043,
+        "accuracy_after_drift": 0.719,
+        "scored_fraction": 0.8333333333333334,
+        "n_retrains": 6,
+        "retrain_time_total_s": 0.1577620069999739,
+        "retrain_time_mean_s": 0.026293667833328982,
+        "memory_bytes": 11987,
+        "buffer_size": 2000
+      },
+      {
+        "accuracy": 0.584625,
+        "accuracy_after_drift": 0.4665,
+        "scored_fraction": 0.6666666666666666,
+        "n_retrains": 3,
+        "retrain_time_total_s": 0.13849623699991298,
+        "retrain_time_mean_s": 0.046165412333304325,
+        "memory_bytes": 15759,
+        "buffer_size": 4000
+      }
+    ]
+  }
+}

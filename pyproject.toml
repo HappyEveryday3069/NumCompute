@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numcompute"
+version = "0.2.0"
+description = "NumCompute (group toolkit) and NumCompute-Stream (decision tree-based streaming ML framework)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.0",
+    "matplotlib>=3.7"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["numcompute*"]

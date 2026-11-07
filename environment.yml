@@ -1,0 +1,15 @@
+# Portable environment for NumCompute / NumCompute-Stream (works on Windows, macOS and Linux).
+#   conda env create -f environment.yml
+#   conda activate numcompute
+#   python -m pip install -e .
+name: numcompute
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - numpy>=2.0
+  - matplotlib>=3.7
+  - pip
+  # only needed to run demo/stream_demo.ipynb
+  - ipykernel
+  - notebook

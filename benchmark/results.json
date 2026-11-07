@@ -1,0 +1,84 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+    "timer": "perf_counter_ns",
+    "time_unit": "seconds",
+    "thread_settings": {
+      "OMP_NUM_THREADS": "unset",
+      "OPENBLAS_NUM_THREADS": "unset",
+      "MKL_NUM_THREADS": "unset"
+    },
+    "numpy_configuration": "Build Dependencies:\n  blas:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-7xf_vzet/cp310-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-7xf_vzet/cp310-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\n  lapack:\n    detection method: pkgconfig\n    found: true\n    include directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-7xf_vzet/cp310-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include\n    lib directory: C:/Users/runneradmin/AppData/Local/Temp/cibw-run-7xf_vzet/cp310-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib\n    name: scipy-openblas\n    openblas configuration: OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY\n      Haswell MAX_THREADS=24\n    pc file directory: C:/a/numpy/numpy/.openblas\n    version: 0.3.29\nCompilers:\n  c:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  c++:\n    commands: cl\n    linker: link\n    name: msvc\n    version: 19.29.30159\n  cython:\n    commands: cython\n    linker: cython\n    name: cython\n    version: 3.1.0\nMachine Information:\n  build:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\n  host:\n    cpu: x86_64\n    endian: little\n    family: x86_64\n    system: windows\nPython Information:\n  path: C:\\Users\\runneradmin\\AppData\\Local\\Temp\\build-env-r6iiznem\\Scripts\\python.exe\n  version: '3.10'\nSIMD Extensions:\n  baseline:\n  - SSE\n  - SSE2\n  - SSE3\n  found:\n  - SSSE3\n  - SSE41\n  - POPCNT\n  - SSE42\n  - AVX\n  - F16C\n  - FMA3\n  - AVX2\n  - AVX512F\n  - AVX512CD\n  - AVX512_SKX\n  - AVX512_CLX\n  - AVX512_CNL\n  - AVX512_ICL\n\n"
+  },
+  "settings": {
+    "n": 100000,
+    "distance_n": 10000,
+    "features": 8,
+    "repeat": 5,
+    "seed": 42,
+    "dtype": "float64",
+    "warmup": 1,
+    "input_creation_timed": false,
+    "allocation_timed": true
+  },
+  "sum": {
+    "python_sum": {
+      "times": [
+        0.0043068,
+        0.0050108,
+        0.0043819,
+        0.0045091,
+        0.0050381
+      ],
+      "mean": 0.00464934,
+      "min": 0.0043068,
+      "max": 0.0050381,
+      "median": 0.0045091
+    },
+    "numpy_sum": {
+      "times": [
+        1.7e-05,
+        3e-05,
+        5.81e-05,
+        2.68e-05,
+        2.22e-05
+      ],
+      "mean": 3.082e-05,
+      "min": 1.7e-05,
+      "max": 5.81e-05,
+      "median": 2.68e-05
+    }
+  },
+  "distances": {
+    "python_distances": {
+      "times": [
+        0.0166452,
+        0.0164377,
+        0.0165377,
+        0.0156805,
+        0.0171069
+      ],
+      "mean": 0.016481600000000002,
+      "min": 0.0156805,
+      "max": 0.0171069,
+      "median": 0.0165377
+    },
+    "numpy_distances": {
+      "times": [
+        0.0008106,
+        0.0009725,
+        0.0007375,
+        0.0009616,
+        0.0008375
+      ],
+      "mean": 0.00086394,
+      "min": 0.0007375,
+      "max": 0.0009725,
+      "median": 0.0008375
+    }
+  }
+}
