@@ -10,9 +10,9 @@ Everything supports **chunk-wise streaming updates** through `partial_fit(...)` 
 ## Installation
 
 ```bash
-git clone <your fork url>
+git clone https://github.com/HappyEveryday3069/NumCompute.git
 cd NumCompute
-git switch <your-individual-branch>   # the branch that contains numcompute_stream/ (use its real name)
+git switch assignment2.2   # the branch that contains numcompute_stream
 
 # Option A: conda (Windows / macOS / Linux), then install the package
 conda env create -f environment.yml
